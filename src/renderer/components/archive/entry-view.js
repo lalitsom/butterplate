@@ -28,8 +28,8 @@ const EntryView = ({ entry }) => (
         {entry.meta.map(meta => (
           <div  key={meta.key}>
             <div className={styles.labelWrapperhead}>{meta.key}</div>
-            <div className={inputWrapper}>
-              <p>{meta.value}</p>
+            <div className={styles.inputWrapper}>
+              <pre>{meta.value}</pre>
             </div>
           </div>
         ))}

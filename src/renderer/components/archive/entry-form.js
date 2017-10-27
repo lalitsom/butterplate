@@ -6,7 +6,7 @@ import RemoveIcon from 'react-icons/lib/fa/trash-o';
 import { Button } from '@buttercup/ui';
 import styles from '../../styles/entry-form';
 import Input from './entry-input';
-
+import autosave from './auto-save';
 const renderMeta = (
   { fields, meta: { touched, error } } // eslint-disable-line react/prop-types
 ) => (
@@ -26,10 +26,10 @@ const renderMeta = (
           <Field
             name={`${member}.value`}
             type="text"
-            component={Input}
-            placeholder="Start Writing"
+            component="textarea"
+            onChange={autosave()}
+            placeholder="Start Writing...."
           />
-          <textarea id="editfield"></textarea>
           </div>
         </div>
       ))}
@@ -42,17 +42,18 @@ const renderMeta = (
       }}
       icon={<PlusIcon />}
     >
-      Add New Field
+      Start new section
     </Button>
     {touched && error && <span>{error}</span>}
   </div>
 );
 
+
 class EntryForm extends Component {
   render() {
     const { handleSubmit } = this.props;
     return (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} id="saveform">
         <div className={styles.formRow}>
           <label className={styles.labelWrapper} htmlFor="properties.title">
             date

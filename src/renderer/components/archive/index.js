@@ -10,9 +10,9 @@ import '../../styles/split-pane.global';
 const Archive = ({ onColumnSizeChange, columnSizes }) => (
   <SplitPane
     split="vertical"
-    minSize={10}
-    maxSize={400}
-    defaultSize={columnSizes ? columnSizes.tree : 11}
+    minSize={0}
+    maxSize={250}
+    defaultSize={columnSizes ? columnSizes.tree : 200}
     onChange={throttle(
       size => onColumnSizeChange({ name: 'tree', size }),
       1000
@@ -21,9 +21,9 @@ const Archive = ({ onColumnSizeChange, columnSizes }) => (
     <TreeView />
     <SplitPane
       split="vertical"
-      minSize={150}
-      maxSize={500}
-      defaultSize={columnSizes ? columnSizes.entries : 230}
+      minSize={0}
+      maxSize={250}
+      defaultSize={columnSizes ? columnSizes.entries : 200}
       onChange={throttle(
         size => onColumnSizeChange({ name: 'entries', size }),
         1000

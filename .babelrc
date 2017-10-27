@@ -1,0 +1,44 @@
+{
+  "presets": [
+    "react",
+    ["env", {
+      "targets": {
+        "node": "7.4",
+        "chrome": 56
+      },
+      "useBuiltIns": true,
+      "modules": false,
+      "loose": true
+    }]
+  ],
+  "plugins": [
+    "lodash",
+    "polished",
+    "transform-object-rest-spread",
+    "transform-strict-mode",
+    "transform-class-properties",
+    "jsx-control-statements"
+  ],
+  "env": {
+  	"production": {
+  		"presets": ["react-optimize"],
+  		"plugins": [
+  			"transform-remove-console",
+  			"transform-remove-debugger",
+        "dev-expression",
+        "jsx-control-statements"
+  		]
+  	},
+    "node": {
+      "plugins": [
+        "transform-es2015-modules-commonjs",
+        "add-module-exports"
+      ]
+    },
+    "development": {
+      "plugins": [
+        // "react-hot-loader/babel"
+      ]
+    }
+  }
+}

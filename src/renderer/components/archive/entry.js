@@ -13,10 +13,14 @@ import EntryView from './entry-view';
 class Entry extends Component {
   componentWillReceiveProps(nextProps) {
     const { mode, entry, initializeForm } = this.props;
+    console.log('i can0')
     if (nextProps.mode !== mode) {
       if (nextProps.mode === 'edit' && entry) {
+        console.log('i can1')
         initializeForm(entry);
+        window.ent = entry;
       }
+
     }
   }
 
@@ -36,7 +40,6 @@ class Entry extends Component {
           <div>
             <Button
               onClick={() => ref.submit()}
-              disabled={!this.props.dirty}
               primary
             >
               Save
@@ -71,8 +74,7 @@ class Entry extends Component {
       footer: (
         <div>
           <Button
-            onClick={() => ref.submit()}
-            disabled={!this.props.dirty}
+            onClick={() => ref.submit()}            
             primary
           >
             Save

@@ -41,8 +41,7 @@ export const updateEntry = newValues => (dispatch, getState) => {
 export const newEntry = newValues => (dispatch, getState) => {
   const state = getState();
   const currentGroupId = getCurrentGroupId(state);
-  const archiveId = getCurrentArchiveId(state);
-
+  const archiveId = getCurrentArchiveId(state);  
   if (!currentGroupId) {
     return null;
   }

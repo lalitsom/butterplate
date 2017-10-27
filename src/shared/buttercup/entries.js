@@ -1,4 +1,5 @@
 import { saveWorkspace, getArchive } from './archive';
+var humanize = require('humanize');
 
 function entryToObj(entry) {
   const obj = entry.toObject();
@@ -42,6 +43,8 @@ export function updateEntry(archiveId, entryObj) {
       entry.getProperty(propertyKey) !== properties[propertyKey]
     ) {
       entry.setProperty(propertyKey, properties[propertyKey]);
+    }else if(propertyKey === 'title'){
+      entry.setProperty(propertyKey, 'date');
     }
   }
 
@@ -58,6 +61,10 @@ export function updateEntry(archiveId, entryObj) {
 
   // Update/Add meta
   meta.forEach(metaObj => {
+    if(! (metaObj.key)){
+    metaObj.key='default heading'
+    }
+
     const source = entry.getMeta(metaObj.key);
     if (
       source === undefined ||
@@ -79,6 +86,9 @@ export function createEntry(archiveId, groupId, newValues) {
     throw new Error('Group has not been found.');
   }
 
+  var date = humanize.date('d-M-y');
+  newValues.properties = newValues.properties || {}
+  newValues.properties.title = date
   const entry = group.createEntry(newValues.properties.title);
 
   ['username', 'password'].forEach(key => {
@@ -88,7 +98,13 @@ export function createEntry(archiveId, groupId, newValues) {
   });
 
   (newValues.meta || []).forEach(meta => {
+    if(meta.key){
     entry.setMeta(meta.key, meta.value);
+    }
+    else{
+      entry.setMeta('entry heading', meta.value);
+    }
+
   });
 
   saveWorkspace(archiveId);

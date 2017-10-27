@@ -22,14 +22,14 @@ const renderMeta = (
               placeholder="Give a Heading.."
             />
           </div>
-          <div className={styles.tWrapper}>
-          <textarea></textarea>
+          <div className={styles.textWrapper}>
           <Field
             name={`${member}.value`}
             type="text"
             component={Input}
             placeholder="Start Writing"
           />
+          <textarea id="editfield"></textarea>
           </div>
         </div>
       ))}

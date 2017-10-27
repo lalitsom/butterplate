@@ -14,7 +14,7 @@
 
 ## Under Development
 
-Buttercup is an exact copy of [Buttercup](https://buttercup.pw) with some very minor changes so that it can be used as a personal diary instead of a password manager.
+Butterplate is an exact copy of [Buttercup](https://buttercup.pw) with some very minor changes so that it can be used as a personal diary instead of a password manager.
 The application is currently unstable.
 
 ## License

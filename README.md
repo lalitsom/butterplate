@@ -1,6 +1,6 @@
 <h1 align="center">
   <br/>
-  <img src="https://cdn.rawgit.com/buttercup-pw/buttercup-assets/054fc0fa/badge/desktop.svg" alt="Butterplate Desktop">
+  <img src="https://cdn.rawgit.com/buttercup-pw/buttercup-assets/054fc0fa/badge/desktop.svg" alt="Buttercup Desktop">
   <br/>
   <br/>
   <br/>
@@ -14,7 +14,7 @@
 
 ## Under Development
 
-Butterplate is an exact copy of [Buttercup](https://buttercup.pw) with some very minor changes so that it can be used as a personal diary instead of a password manager.
+Buttercup is an exact copy of [Buttercup](https://buttercup.pw) with some very minor changes so that it can be used as a personal diary instead of a password manager.
 The application is currently unstable.
 
 ## License

@@ -10,32 +10,33 @@ import { wrapper as inputWrapper } from '../../styles/entry-input';
 import bubbleImage from '../../styles/img/info-bubble.svg';
 import EmptyView from '../empty-view';
 import Copyable from './copyable';
+import styles from '../../styles/entry-form';
 
 const EntryView = ({ entry }) => (
   <div>
-    {['title', 'username', 'password'].map(key => (
+    {['title'].map(key => (
       <div className={formRow} key={key}>
-        <div className={labelWrapper}>{key}</div>
+        <div className={labelWrapper}>{'date'}</div>
         <div className={inputWrapper}>
           <Copyable type={key}>{entry.properties[key]}</Copyable>
         </div>
       </div>
     ))}
-    <h6 className={heading}>Custom Fields:</h6>
+    <h6 className={heading}></h6>
     {entry.meta.length > 0 ? (
       <div className={metaWrapper}>
         {entry.meta.map(meta => (
-          <div className={formRow} key={meta.key}>
-            <div className={labelWrapper}>{meta.key}</div>
+          <div  key={meta.key}>
+            <div className={styles.labelWrapperhead}>{meta.key}</div>
             <div className={inputWrapper}>
-              <Copyable>{meta.value}</Copyable>
+              <p>{meta.value}</p>
             </div>
           </div>
         ))}
       </div>
     ) : (
       <EmptyView
-        caption="No custom fields yet. Why not add one?"
+        caption="Nothing to show."
         imageSrc={bubbleImage}
       />
     )}

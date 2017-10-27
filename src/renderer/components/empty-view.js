@@ -47,7 +47,7 @@ export const NoArchiveSelected = () => (
   <ColoredFlex align="center" justify="center" flexAuto>
     <Figure>
       <img src={logo} />
-      <Title>Welcome back to Buttercup.</Title>
+      <Title>Welcome back to Butterplate.</Title>
       <Caption>
         Unlock an archive to begin ({isOSX() ? '⌘' : 'Ctrl'}+1).
       </Caption>
@@ -59,7 +59,7 @@ export const WelcomeScreen = () => (
   <ColoredFlex align="center" justify="center" flexColumn flexAuto>
     <Figure>
       <img src={logo} />
-      <Title>Welcome to Buttercup.</Title>
+      <Title>Welcome to Butterplate.</Title>
       <Caption>
         You haven't added have any archives yet. Why not add one?
       </Caption>

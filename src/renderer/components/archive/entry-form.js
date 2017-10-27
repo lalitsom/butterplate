@@ -13,22 +13,24 @@ const renderMeta = (
   <div>
     <div className={styles.metaWrapper}>
       {fields.map((member, index) => (
-        <div className={styles.formRow} key={index}>
+        <div key={index}>
           <div className={styles.labelWrapper}>
             <Field
               name={`${member}.key`}
               type="text"
               component="input"
-              placeholder="Label"
+              placeholder="Give a Heading.."
             />
           </div>
+          <div className={styles.tWrapper}>
+          <textarea></textarea>
           <Field
             name={`${member}.value`}
             type="text"
             component={Input}
-            placeholder="New Field"
+            placeholder="Start Writing"
           />
-          <Button onClick={() => fields.remove(index)} icon={<RemoveIcon />} />
+          </div>
         </div>
       ))}
     </div>
@@ -53,7 +55,7 @@ class EntryForm extends Component {
       <form onSubmit={handleSubmit}>
         <div className={styles.formRow}>
           <label className={styles.labelWrapper} htmlFor="properties.title">
-            Title
+            date
           </label>
           <Field
             name="properties.title"
@@ -62,6 +64,8 @@ class EntryForm extends Component {
             placeholder="Untitled"
           />
         </div>
+
+        <div className={styles.hideDiv}>
         <div className={styles.formRow}>
           <label className={styles.labelWrapper} htmlFor="properties.username">
             Username
@@ -84,7 +88,10 @@ class EntryForm extends Component {
             placeholder="Secure password..."
           />
         </div>
-        <h6 className={styles.heading}>Custom Fields:</h6>
+        </div>
+
+
+        <h6 className={styles.heading}></h6>
         <FieldArray name="meta" component={renderMeta} />
       </form>
     );

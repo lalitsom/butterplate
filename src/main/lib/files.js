@@ -11,7 +11,7 @@ const dialogOptions = {
   filters: [
     {
       name: 'Buttercup Archives',
-      extensions: ['bcup']
+      extensions: ['bplate']
     }
   ]
 };
@@ -80,7 +80,7 @@ export function loadFile(filePath, win, isNew = false) {
     path: normalizePath(filePath),
     isNew
   };
-  if (path.extname(filePath).toLowerCase() !== '.bcup') {
+  if (path.extname(filePath).toLowerCase() !== '.bplate') {
     return;
   }
   if (!win) {

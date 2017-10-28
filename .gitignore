@@ -30,7 +30,7 @@ node_modules
 .idea
 
 # App packaged
-*.bcup
+*.bplate
 release
 .DS_Store
 typings

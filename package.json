@@ -1,8 +1,8 @@
 {
-  "name": "buttercup-desktop",
-  "productName": "Buttercup",
-  "version": "0.22.0",
-  "description": "Free and Open Source password vault",
+  "name": "butterplate",
+  "productName": "Butterplate",
+  "version": "0.1.0",
+  "description": "Free and Open Source Encrypted Diary",
   "main": "app/dist/app.js",
   "scripts": {
     "clean": "rimraf ./app/node_modules",
@@ -35,8 +35,8 @@
     ]
   },
   "build": {
-    "appId": "pw.buttercup.desktop",
-    "copyright": "Copyright © 2015-2017 Buttercup and Contributors",
+    "appId": "pw.butterplate.desktop",
+    "copyright": "Copyright © 2017 Butterplate and Contributors",
     "mac": {
       "category": "public.app-category.productivity"
     },
@@ -70,11 +70,11 @@
         "deb"
       ],
       "category": "Utility",
-      "synopsis": "Free and Open Source Password Vault"
+      "synopsis": "Free and Open Source Encrypted Diary"
     },
     "fileAssociations": {
-      "ext": "bcup",
-      "name": "Buttercup Archive",
+      "ext": "bplate",
+      "name": "Butterplate Archive",
       "icon": "./build/icon.icns"
     },
     "directories": {
@@ -83,15 +83,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buttercup/buttercup-desktop.git"
+    "url": "git+https://github.com/lalitsom/butterplate.git"
   },
   "keywords": [
-    "password",
-    "vault",
-    "manager",
-    "credentials"
+    "Diary",
+    "Journal",
+    "manager"
   ],
-  "author": "Buttercup <info@buttercup.pw>",
+  "author": "Lalit Som <github@lalitsom>",
   "contributors": [
     {
       "name": "Perry Mitchell",
@@ -104,9 +103,8 @@
   ],
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/buttercup/buttercup-desktop/issues"
+    "url": "https://github.com/lalitsom/butterplate/issues"
   },
-  "homepage": "https://buttercup.pw",
   "dependencies": {
     "opencollective": "^1.0.3"
   },
@@ -234,10 +232,5 @@
     "webpack": "2.2.0",
     "webpack-dev-server": "2.2.0",
     "webpack-merge": "^2.6.0"
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/buttercup",
-    "logo": "https://opencollective.com/opencollective/logo.txt"
   }
 }

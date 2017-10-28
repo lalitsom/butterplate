@@ -69,7 +69,7 @@ class Manager extends Component {
     this.setState({
       contents: sortContent([
         {
-          name: 'untitled.bcup',
+          name: 'untitled.bplate',
           type: 'file',
           size: 0,
           mtime: new Date(),
@@ -115,7 +115,7 @@ class Manager extends Component {
         if (item.isNew) {
           return {
             ...item,
-            name: `${fileName}.bcup`,
+            name: `${fileName}.bplate`,
             editing: false,
             mtime: new Date().getTime()
           };

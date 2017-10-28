@@ -32,7 +32,7 @@ export function setWindowSize(width, height, vibrancy) {
 }
 
 export function isButtercupFile(filePath) {
-  return path.extname(filePath).toLowerCase() === '.bcup';
+  return path.extname(filePath).toLowerCase() === '.bplate';
 }
 
 export function emitActionToParentAndClose(name, payload) {

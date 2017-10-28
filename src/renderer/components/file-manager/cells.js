@@ -44,7 +44,7 @@ class NewFileInput extends Component {
     let { name } = this.state;
     name = name
       .trim()
-      .replace(/\.bcup$/, '')
+      .replace(/\.bplate$/, '')
       .trim();
     if (name.length === 0) {
       return;

@@ -179,7 +179,7 @@ class SidebarItem extends Component {
     const { name, color, status, type } = archive;
     const locked = status === 'locked';
 
-    const formattedName = capitalize(name.replace('.bcup', ''));
+    const formattedName = capitalize(name.replace('.bplate', ''));
     const briefName = capitalize(name.substring(0, 2));
 
     return (

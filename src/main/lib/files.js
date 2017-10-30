@@ -10,7 +10,7 @@ const windowManager = getWindowManager();
 const dialogOptions = {
   filters: [
     {
-      name: 'Buttercup Archives',
+      name: 'Butterplate Archives',
       extensions: ['bplate']
     }
   ]

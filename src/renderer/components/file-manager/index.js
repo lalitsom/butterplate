@@ -123,7 +123,7 @@ export default class FileManager extends Component {
                   disabled={this.state.selectedConfig === null}
                   onClick={this.handleOpenClick}
                 >
-                  Open in Buttercup
+                  Open in Butterplate
                 </Button>
               </ButtonRow>
             </Flex>

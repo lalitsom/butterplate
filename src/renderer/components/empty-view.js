@@ -61,7 +61,7 @@ export const WelcomeScreen = () => (
       <img src={logo} />
       <Title>Welcome to Butterplate.</Title>
       <Caption>
-        You haven't added have any archives yet. Why not add one?
+        You haven't added any archives yet. Why not add one?
       </Caption>
     </Figure>
     <AddArchiveButton />

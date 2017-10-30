@@ -43,8 +43,9 @@ export function updateEntry(archiveId, entryObj) {
       entry.getProperty(propertyKey) !== properties[propertyKey]
     ) {
       entry.setProperty(propertyKey, properties[propertyKey]);
-    }else if(propertyKey === 'title'){
-      entry.setProperty(propertyKey, 'date');
+    }else if(propertyKey === 'title' && (entry.getProperty(propertyKey) == '')){
+      let date = humanize.date('d-M-y');
+      entry.setProperty(propertyKey, date);
     }
   }
 

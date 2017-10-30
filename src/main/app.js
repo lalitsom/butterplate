@@ -13,7 +13,7 @@ import { sleep } from '../shared/utils/promise';
 import { setupActions } from './actions';
 import { setupWindows } from './windows';
 
-log.info('Buttercup starting up...');
+log.info('Butterplate starting up...');
 
 // Unhandled rejections
 const unhandled = require('electron-unhandled');
@@ -35,7 +35,7 @@ if (process.env.NODE_ENV !== 'development') {
   const { crashReporter } = require('electron');
   crashReporter.start({
     productName: app.getName(),
-    companyName: 'Buttercup LLC',
+    companyName: 'Butterplate LLC',
     submitURL:
       'https://electron-crash-reporter.appspot.com/5642489998344192/create/',
     uploadToServer: true
@@ -59,7 +59,7 @@ const installExtensions = async () => {
   }
 };
 
-// In case user tries to open a file using Buttercup (on Mac)
+// In case user tries to open a file using Butterplate (on Mac)
 app.on('open-file', (e, filePath) => {
   e.preventDefault();
   if (appIsReady === true) {
@@ -69,7 +69,7 @@ app.on('open-file', (e, filePath) => {
   }
 });
 
-// Open file using Buttercup (on Windows)
+// Open file using Butterplate (on Windows)
 if (isWindows() && typeof process.argv[1] === 'string') {
   initialFile = process.argv[1];
 }

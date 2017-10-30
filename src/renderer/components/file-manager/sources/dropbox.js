@@ -89,7 +89,7 @@ class Dropbox extends Component {
             Authenticate with Dropbox
           </DropboxButton>
           <SmallType border>
-            <InfoIcon /> Connect Buttercup to your Dropbox account to read and
+            <InfoIcon /> Connect Butterplate to your Dropbox account to read and
             save your archives.<br />
             We won't save your Dropbox username or password.
           </SmallType>

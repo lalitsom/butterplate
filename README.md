@@ -1,6 +1,8 @@
 <h1 align="center">
   <br/>
-  Butterplate for desktop </h1> <h3> (Free and Open Source Encrypted Diary)</h3>
+  Butterplate for desktop
+</h1>
+ <h3 align="center"> (Free and Open Source Encrypted Diary)</h3>
   <br/>
   <br/>
   <br/>

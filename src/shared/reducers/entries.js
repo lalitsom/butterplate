@@ -101,7 +101,7 @@ function filter(state = '', action) {
   }
 }
 
-function sortMode(state = 'properties.title-asc', action) {
+function sortMode(state = 'properties.title-desc', action) {
   switch (action.type) {
     case ENTRIES_SET_SORT:
       return action.payload;

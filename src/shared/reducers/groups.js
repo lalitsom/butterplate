@@ -133,7 +133,7 @@ function shownIds(state = [], action) {
   }
 }
 
-function sortMode(state = 'title-asc', action) {
+function sortMode(state = 'title-desc', action) {
   switch (action.type) {
     case GROUPS_SET_SORT:
       return action.payload;

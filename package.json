@@ -36,7 +36,7 @@
   },
   "build": {
     "appId": "pw.butterplate.desktop",
-    "copyright": "Copyright © 2017 Butterplate and Contributors",
+    "copyright": "Copyright © 2017 Butterplate and Buttercup Contributors",
     "mac": {
       "category": "public.app-category.productivity"
     },

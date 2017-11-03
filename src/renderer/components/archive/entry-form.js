@@ -62,7 +62,7 @@ class EntryForm extends Component {
             name="properties.title"
             component={Input}
             type="text"
-            placeholder="Untitled"
+            placeholder="if left blank today's date will be used..."
           />
         </div>
 

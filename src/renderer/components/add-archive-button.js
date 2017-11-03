@@ -7,8 +7,7 @@ import { showContextMenu } from '../system/menu';
 const AddArchiveButton = ({
   condenced = false,
   onNewClick,
-  onOpenClick,
-  onCloudClick,
+  onOpenClick,  
   ...props
 }) => (
   <Button
@@ -23,11 +22,6 @@ const AddArchiveButton = ({
           label: 'New Archive File',
           accelerator: 'CmdOrCtrl+N',
           click: onNewClick
-        },
-        {
-          label: 'Connect Cloud Sources',
-          accelerator: 'CmdOrCtrl+Shift+C',
-          click: onCloudClick
         }
       ])}
     icon={<ArchiveIcon />}
@@ -40,8 +34,7 @@ const AddArchiveButton = ({
 AddArchiveButton.propTypes = {
   condenced: PropTypes.bool,
   onOpenClick: PropTypes.func,
-  onNewClick: PropTypes.func,
-  onCloudClick: PropTypes.func
+  onNewClick: PropTypes.func
 };
 
 export default AddArchiveButton;

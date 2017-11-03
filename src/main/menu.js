@@ -28,20 +28,8 @@ const defaultTemplate = [
         click: (item, focusedWindow) => openFile(focusedWindow)
       },
       {
-        label: 'Connect Cloud Sources',
-        accelerator: 'CmdOrCtrl+Shift+C',
-        click: (item, focusedWindow) => {
-          getWindowManager().buildWindowOfType('file-manager', null, {
-            parent: getMainWindow(focusedWindow)
-          });
-        }
-      },
-      {
         type: 'separator'
-      },
-      // @TODO: Gray out this option dynamically
-      // when target is not available
-      {},
+      },      
       {
         type: 'separator'
       },
@@ -87,20 +75,20 @@ const defaultTemplate = [
       {
         label: 'Visit Our Website',
         click: () => {
-          shell.openExternal('https://buttercup.pw');
+          shell.openExternal('https://lalitsom.github.io/showcase/butterplate/');
         }
       },
       {
         label: 'Privacy Policy',
         click: () => {
-          shell.openExternal('https://buttercup.pw/privacy');
+          shell.openExternal('https://lalitsom.github.io/showcase/butterplate/privacy.html');
         }
       },
       {
         label: `View Changelog For v${pkg.version}`,
         click: () => {
           shell.openExternal(
-            `https://github.com/buttercup/buttercup/releases/tag/v${pkg.version}`
+            `https://github.com/lalitsom/butterplate/releases/tag/v${pkg.version}`
           );
         }
       }

@@ -20,9 +20,9 @@ export function authenticateDropbox() {
       }
     });
 
-    const redirectUri = 'https://buttercup.pw/';
-    const clientId = '5fstmwjaisrt06t';
-    const authUri = `https://www.dropbox.com/1/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=token`;
+    const redirectUri = 'https://fakeurl/';
+    const clientId = 'fakeid';
+    const authUri = `https://www.dropbox.com/authtoken`;
     authWin.loadURL(authUri);
     authWin.show();
 

@@ -11,8 +11,8 @@ import {
   closeCurrentWindow
 } from '../../system/utils';
 import TypeSelector from './type-selector';
-import Dropbox from './sources/dropbox';
-import Webdav from './sources/webdav';
+// import Dropbox from './sources/dropbox';
+// import Webdav from './sources/webdav';
 
 const Wrapper = styled(Flex)`
   background-color: #fff;

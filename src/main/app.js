@@ -37,7 +37,7 @@ if (process.env.NODE_ENV !== 'development') {
     productName: app.getName(),
     companyName: 'Butterplate LLC',
     submitURL:
-      'https://electron-crash-reporter.appspot.com/5642489998344192/create/',
+      'https://electron-crash-reporter.appspot.com/fakeidnumber/create/',
     uploadToServer: true
   });
 }

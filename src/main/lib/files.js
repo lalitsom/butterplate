@@ -36,7 +36,7 @@ function showOpenDialog(focusedWindow) {
     focusedWindow,
     {
       ...dialogOptions,
-      title: 'Load a Buttercup Archive'
+      title: 'Load a Butterplate Archive'
     },
     filename => {
       if (filename && filename.length > 0) {
@@ -58,7 +58,7 @@ function showSaveDialog(focusedWindow) {
     focusedWindow,
     {
       ...dialogOptions,
-      title: 'Create a New Buttercup Archive'
+      title: 'Create a New Butterplate Archive'
     },
     filename => {
       if (typeof filename === 'string' && filename.length > 0) {
@@ -69,7 +69,7 @@ function showSaveDialog(focusedWindow) {
 }
 
 /**
- * Open File helper using Buttercup
+ * Open File helper using Butterplate
  *
  * @param {String} filePath
  * @param {BrowserWindow} win
@@ -116,7 +116,7 @@ export function openFile(focusedWindow) {
 }
 
 /**
- * Create a new file and open it in Buttercup
+ * Create a new file and open it in Butterplate
  * then ask the user for a password
  *
  * @param {BrowserWindow} focusedWindow

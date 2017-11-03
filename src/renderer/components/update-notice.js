@@ -16,7 +16,7 @@ const UpdateNotice = ({
     <div className={className} onClick={onClick}>
       {installing
         ? 'Installing...'
-        : `Buttercup ${version} is available. Click here to install now.`}
+        : `Butterplate ${version} is available. Click here to install now.`}
     </div>
   );
 };

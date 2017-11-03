@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex } from 'styled-flexbox';
 import { isOSX } from '../../shared/utils/platform';
-import logo from '../styles/img/solo-logo.svg';
+import logo from '../styles/img/med-logo.png';
 import AddArchiveButton from '../containers/add-archive-button';
 
 const Caption = styled.figcaption`

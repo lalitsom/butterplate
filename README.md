@@ -14,7 +14,7 @@
 
  [![encryption](https://img.shields.io/badge/Encryption-AES%20256%20CBC-red.svg)](https://tools.ietf.org/html/rfc3602)
 
-![image](https://user-images.githubusercontent.com/23455413/32187011-b2d67180-bdc9-11e7-8cf1-3ee7c6a27df3.png)
+![image](https://user-images.githubusercontent.com/23455413/32367348-d0cd0538-c0a7-11e7-83e0-35b035576945.png)
 
 ## Under Development
 

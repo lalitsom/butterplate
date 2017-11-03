@@ -1,6 +1,7 @@
 <h1 align="center">
   <br/>
   <img src="https://user-images.githubusercontent.com/23455413/32366991-83e753be-c0a6-11e7-806b-9e2226997b09.png" alt="Butterplate Desktop">
+  <br>
   Butterplate for desktop
 </h1>
  <h3 align="center"> (Free and Open Source Encrypted Diary)</h3>

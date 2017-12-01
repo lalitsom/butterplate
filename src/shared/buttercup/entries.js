@@ -89,7 +89,9 @@ export function createEntry(archiveId, groupId, newValues) {
 
   var date = humanize.date('d-M-y');
   newValues.properties = newValues.properties || {}
-  newValues.properties.title = date
+  if (!newValues.properties.title){
+      newValues.properties.title = date
+  }  
   const entry = group.createEntry(newValues.properties.title);
 
   ['username', 'password'].forEach(key => {

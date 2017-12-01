@@ -6,7 +6,7 @@ import RemoveIcon from 'react-icons/lib/fa/trash-o';
 import { Button } from '@buttercup/ui';
 import styles from '../../styles/entry-form';
 import Input from './entry-input';
-import autosave from './auto-save';
+
 const renderMeta = (
   { fields, meta: { touched, error } } // eslint-disable-line react/prop-types
 ) => (
@@ -26,8 +26,7 @@ const renderMeta = (
           <Field
             name={`${member}.value`}
             type="text"
-            component="textarea"
-            onChange={autosave()}
+            component="textarea"            
             placeholder="Start Writing...."
           />
           </div>

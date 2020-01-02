@@ -17,8 +17,23 @@ export function sortByKey(list, sortKey) {
   if (!key || !order) {
     return list;
   }
-  const sorted = sortBy(list, o => at(o, key));
+
+  list.forEach(element => {
+    element.sortKey = changeToDate(element, key);
+  });
+  const sorted = sortBy(list, o => at(o, 'sortKey'));
   return order === 'asc' ? sorted : sorted.reverse();
+}
+
+function changeToDate(element, key) {
+  if (element.properties && element.properties.title) {
+    if (isNaN(Date.parse(element.properties.title))) {
+      return element.properties.title;
+    } else {
+      return Date.parse(element.properties.title);
+    }
+  }
+  return element[key];
 }
 
 export function sortByLastAccessed(list) {

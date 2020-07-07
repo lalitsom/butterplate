@@ -145,7 +145,7 @@
     "del": "^2.2.1",
     "devtron": "^1.4.0",
     "dropbox-fs": "^0.0.5",
-    "electron": "^1.8.1",
+    "electron": "^7.2.4",
     "electron-builder": "^19.42.2",
     "electron-debug": "^1.4.0",
     "electron-devtools-installer": "^2.2.1",

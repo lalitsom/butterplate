@@ -192,7 +192,7 @@
     "mousetrap": "^1.6.1",
     "ms": "^0.7.2",
     "node-noop": "^1.0.0",
-    "node-sass": "^4.5.3",
+    "node-sass": "^7.0.0",
     "normalizr": "^3.2.4",
     "pify": "^2.3.0",
     "prettier": "1.7.4",
